@@ -15,13 +15,13 @@ const Navbar = () => {
 
 
     return (
-        <div className="">
+        <div className="mt-4 ml-4">
             <div onClick={() => setOpen(!open)} className="text-2xl lg:hidden">
                 {
                     open === true ? <AiOutlineClose></AiOutlineClose> : <AiOutlineMenuUnfold></AiOutlineMenuUnfold>
                 }
             </div>
-            <ul className={`absolute lg:relative top-6 lg:top-0 duration-1000 ${open === true ? `left-8` : `-left-28`} lg:left-0 lg:flex lg:gap-16`}>
+            <ul className={`absolute lg:relative top-10 lg:top-0 duration-1000 ${open === true ? `left-8` : `-left-28`} lg:left-0 lg:flex lg:gap-16`}>
                 {
                     fakeRoutes.map(fakeRoute => <Link key={fakeRoute.id} fakeRoute={fakeRoute}></Link>)
                 }

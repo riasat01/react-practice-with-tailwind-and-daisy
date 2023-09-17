@@ -1,4 +1,5 @@
 import './App.css'
+import GymContainer from './components/GymContainer'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <div className="swap-off">OFF</div>
       </label> */}
       <Navbar></Navbar>
+      <GymContainer></GymContainer>
     </>
   )
 }
