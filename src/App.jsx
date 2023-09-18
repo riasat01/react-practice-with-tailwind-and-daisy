@@ -1,5 +1,6 @@
 import './App.css'
 import GymContainer from './components/GymContainer'
+import LineChart from './components/LineChart'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       </label> */}
       <Navbar></Navbar>
       <GymContainer></GymContainer>
+      <LineChart></LineChart>
     </>
   )
 }
